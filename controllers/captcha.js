@@ -8,7 +8,7 @@ const controller = {
         const captchaResolve = await captcha(base64);
 
         return res.status(200).send({
-            captcha: captchaResolve
+            captcha: captchaResolve.toUpperCase()
         })
     }
 }
